@@ -1,0 +1,38 @@
+{
+    "name": "wizaplace/atoum-slicer",
+    "description": "Slice your Atoum test suite",
+    "type": "library",
+    "homepage": "https://github.com/wizaplace/atoum-slicer",
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.15",
+        "phpstan/phpstan": "^0.11.8",
+        "phpunit/phpunit": "^8.1",
+        "atoum/atoum": "^3.0",
+        "atoum/stubs": "~2.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wizaplace",
+            "email": "dev@wizaplace.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Wizaplace\\Atoum\\Slicer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wizaplace\\Test\\Atoum\\Slicer\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "bin": [
+        "atoum-slicer"
+    ]
+}
