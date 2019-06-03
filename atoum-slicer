@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+/**
+ * @author      Wizacha DevTeam <dev@wizacha.com>
+ * @copyright   Copyright (c) Wizacha
+ * @license     Proprietary
+ */
+declare(strict_types=1);
+
+use Wizaplace\Atoum\Slicer\Command;
+
+foreach (array(__DIR__ . '/../../autoload.php', __DIR__ . '/../vendor/autoload.php', __DIR__ . '/vendor/autoload.php') as $file) {
+    if (file_exists($file)) {
+        require_once($file);
+        break;
+    }
+}
+unset($file);
+
+if (Command::autorunMustBeEnabled() === true) {
+    $command = Command::enableAutorun('Wizaplace\Atoum\Slicer\Command');
+}
