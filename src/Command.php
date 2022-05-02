@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace Wizaplace\Atoum\Slicer;
 
-use mageekguy\atoum\scripts\runner;
+use atoum\atoum\scripts\runner;
 
 class Command extends runner
 {
