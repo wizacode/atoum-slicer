@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace Wizaplace\Atoum\Slicer\tests\units;
 
-use mageekguy\atoum\test;
+use atoum\atoum\test;
 
 \error_reporting(0);
 
