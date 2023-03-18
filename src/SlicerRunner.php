@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace Wizaplace\Atoum\Slicer;
 
-use mageekguy\atoum\runner;
+use atoum\atoum\runner;
 
 class SlicerRunner extends runner
 {
